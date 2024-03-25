@@ -1,3 +1,4 @@
+import {RockPaperScissors } from './rock_paper_scissors.js';
 // Elements
 const welcomeScreen = document.getElementById(`welcome-screen`);
 const gameScreen = document.getElementById(`game-screen`);
@@ -10,8 +11,8 @@ const gameHistoryParagraph = document.getElementById(`game-history`);
 const resetGameButton = document.getElementById(`reset-game-button`);
 
 // instantiate the game object from the `RockPaperScissors` class.
-var game;
-var username;
+let game;
+let username;
 
 // hide gamescreen
 gameScreen.classList.add(`d-none`);
@@ -24,7 +25,7 @@ function updateScoreTallyUI(){
 
 // updateGameHistoryUI
 function updateGameHistoryUI(){
-      gameHistoryParagraph.innerHTML = ''; 
+      gameHistoryParagraph.innerHTML = ``; 
     gameHistoryParagraph.innerHTML = game.gameHistoryLog; 
 }
 
